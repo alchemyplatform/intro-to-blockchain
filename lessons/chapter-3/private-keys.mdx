@@ -12,6 +12,8 @@ nextLesson: "wallets"
 
 A **private key** in the blockchain world is like a secret password—but even more important and powerful. It’s a long string of letters and numbers that allows you to **access and control** the tokens in a blockchain account. You can think of the private key as the key to a safety deposit box: only the person with the key can open the box and take what’s inside. In blockchain terms, what’s “inside” is the ability to send your cryptocurrency or use your assets. The private key is what you use to **digitally sign transactions**, proving to the network that you are the legitimate owner initiating an action.
 
+![not-your-keys-not-your-coins](/assets/images/chapter-3/not-your-keys-not-your-coins.png)
+
 **🧠 DEEP DIVE: Why "Not Your Keys, Not Your Coins" Matters**
 
 In crypto, there’s no password reset button. If you lose your private key or seed phrase, your funds are unrecoverable. This might seem harsh, but it reinforces **self-custody**—one of the core values of Web3.
@@ -31,6 +33,8 @@ Here’s an analogy: Imagine you have a special stamp (the private key) that can
 **Critical point: Keeping private keys safe** is paramount. In crypto, **you are your own bank**. If you lose your private key (or recovery phrase/seed—more on that soon), you lose access to your funds, _with no password reset_\! Similarly, if someone steals your private key, they effectively steal your coins (since they can authorize transfers). This is why you hear “not your keys, not your coins”—meaning if you aren’t in control of the private keys (for instance, if you leave coins on an exchange which holds keys for you), you don’t truly have control. We’ll discuss safety more in Chapter 9, but always remember: a private key must be kept **secret and secure**.
 
 In practice, private keys are often managed via a **seed phrase**—a list of 12 or 24 English words that encode your key (or rather, a master key from which many keys can be derived). This makes it easier for humans to back up. You might see something like “correct horse battery staple...” (a famous example) as a seed phrase. That phrase can recreate your keys if you have to restore a wallet. Again—anyone with that phrase has your keys\! So it’s locked down, written on paper and stored safely, or kept in a hardware device.
+
+![guardian-of-the-seed-phrase](/assets/images/chapter-3/guardian-of-the-seed-phrase.png)
 
 To summarize: A private key is a secret number that **allows users to access and spend their assets on the blockchain**. It’s attached to your public address and functions like a signature on transactions. When you send cryptocurrency or perform any action from your account, your software will create a transaction and **sign it with your private key**. The network’s nodes verify the signature with your public key (ensuring it matches and hasn’t been tampered with). If valid, the transaction goes through. All without revealing your private key—the math ensures you don’t need to show the key itself, just the signature. This system is the core of blockchain security (it’s based on cryptography, which is why we call these _crypto_ currencies).
 

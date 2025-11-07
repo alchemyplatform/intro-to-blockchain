@@ -20,6 +20,8 @@ We’ve already seen this in DeFi: they often call DeFi applications “money Le
 
 - You could take a stablecoin DAI from MakerDAO, supply it to Compound to earn interest, then take the interest-bearing token you get from Compound and trade it on Uniswap for another asset, all automatically. Each step is a different protocol, but they interoperate because they share Ethereum as a base and standards like ERC-20. Developers can chain these actions in a single transaction – this led to innovations like **flash loans** (borrowing and returning within one transaction, enabling arbitrage or complex multi-step trades) which leverage multiple protocols in one go. No one “planned” flash loans at the start; they emerged from composability and creativity.
 
+![money-lego-tower](/assets/images/chapter-8/money-lego-tower.png)
+
 - Another example: Yearn Finance vaults took advantage of multiple protocols. A Yearn vault might put funds into Curve (a DEX) to earn trading fees, then stake the Curve LP token in Convex (another optimizer) to earn extra rewards. That’s a protocol using two other protocols under the hood, amplifying yield. It’s like stacking Legos to get a taller structure. The interesting part is Yearn didn’t need permission from Curve or Convex to do that; everything is open and contract-based.
 
 Composability isn’t just in DeFi; NFT projects also see it:
@@ -27,6 +29,8 @@ Composability isn’t just in DeFi; NFT projects also see it:
 - Example: If you own an NFT of a game character, composability could allow that character to be used in a different game that decides to integrate the NFT. We’ve seen small instances: some indie games let you import a CryptoPunk or Ape as a skin in their world. Another: some projects take two NFT collections and let owners “merge” them in creative ways (imagine if you have an NFT from Collection A and one from Collection B, a dApp might let you generate a new NFT that combines traits – without needing both original creators to coordinate, beyond what the open standards allow).
 
 - **Composable NFTs** are being explored – e.g., an NFT that can “hold” other NFTs (like a game avatar NFT that holds weapon NFTs and outfit NFTs). The avatar’s smart contract can have slots for equipment that point to other token IDs. This way, your character NFT is like a backpack for other assets, which is a natural way to represent something like a gaming profile.
+
+![composable-avatar-gear](/assets/images/chapter-8/composable-avatar-gear.png)
 
 Composability essentially lowers the barrier to entry for innovation. A new team can build on existing smart contracts rather than starting from scratch, akin to how open source libraries allow rapid software development. However, it also means **risks can stack**: if one Lego (protocol) has a flaw, and many others are built on it, a lot can topple if that piece breaks. We saw this with something like a stablecoin de-peg affecting multiple protocols that integrated it, etc. So the community is learning to evaluate dependencies (like, is this Lego brick robust? If not, maybe don’t build a tall tower on it yet).
 
