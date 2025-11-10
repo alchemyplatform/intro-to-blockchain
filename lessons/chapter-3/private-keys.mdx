@@ -24,8 +24,7 @@ A helpful way to understand this is the concept of a **public address** and a **
 
 In technical terms, a private key is a randomly generated number (often 256 bits in length for cryptocurrencies like Bitcoin/Ethereum). From that number, through cryptographic algorithms, a corresponding public key and address are derived. This cryptographic relationship is one-way: you can easily generate an address from the private key, but you cannot feasibly compute the private key from the address. This ensures that you can share your address to receive funds without worrying someone can reverse-engineer your private key.
 
-**🔐 FAST FACT: How Big is 256-Bit?**
-
+>**🔐 FAST FACT: How Big is 256-Bit?**
 A 256-bit number has more possible combinations than there are atoms in the observable universe. That’s why it’s considered secure—brute-forcing a private key would take longer than the age of the universe.
 
 Here’s an analogy: Imagine you have a special stamp (the private key) that can imprint a unique signature seal on a document. You have a public mailbox (your address) where people can drop off letters (send you tokens). When you want to send a letter out (make a transaction), you use your private stamp to seal it—everyone can verify that seal to see that it’s really from the owner of the mailbox (because the public key can be used to verify the signature), but no one can forge your seal because they don’t have your private stamp. In this analogy, the private stamp is your private key; it proves authority and can’t be copied without physically stealing it from you.
