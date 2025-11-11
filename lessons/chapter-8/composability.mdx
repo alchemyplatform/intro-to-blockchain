@@ -12,15 +12,14 @@ nextLesson: "ai-blockchain"
 
 One of the superpowers of Web3 and open protocols is **composability** – this means that different modules or components can easily connect and work together, often in ways the original creators didn’t anticipate. In simpler terms, composability is like having Lego bricks: you can build new structures by combining existing pieces, and everyone has access to the same standard pieces.
 
-### **📌 Sidebar: _What is Composability?_**
+![money-lego-tower](/assets/images/chapter-8/money-lego-tower.png)
 
+>**📌 Sidebar: _What is Composability?_**
 Composability means Web3 tools and apps are like digital LEGO blocks. Developers can reuse smart contracts, protocols, or components from other projects without needing to rebuild from scratch. This speeds up innovation—just like how building a house is faster with pre-cut lumber and pre-made bricks.
 
 We’ve already seen this in DeFi: they often call DeFi applications “money Legos”. For example:
 
 - You could take a stablecoin DAI from MakerDAO, supply it to Compound to earn interest, then take the interest-bearing token you get from Compound and trade it on Uniswap for another asset, all automatically. Each step is a different protocol, but they interoperate because they share Ethereum as a base and standards like ERC-20. Developers can chain these actions in a single transaction – this led to innovations like **flash loans** (borrowing and returning within one transaction, enabling arbitrage or complex multi-step trades) which leverage multiple protocols in one go. No one “planned” flash loans at the start; they emerged from composability and creativity.
-
-![money-lego-tower](/assets/images/chapter-8/money-lego-tower.png)
 
 - Another example: Yearn Finance vaults took advantage of multiple protocols. A Yearn vault might put funds into Curve (a DEX) to earn trading fees, then stake the Curve LP token in Convex (another optimizer) to earn extra rewards. That’s a protocol using two other protocols under the hood, amplifying yield. It’s like stacking Legos to get a taller structure. The interesting part is Yearn didn’t need permission from Curve or Convex to do that; everything is open and contract-based.
 
